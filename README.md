@@ -6,6 +6,8 @@ This project demonstrates how to use a robotic arm controlled via the RoboDK lib
 ## Prerequisites
 - [RoboDK](https://robodk.com/download) software installed on your machine.
 - APIJaka driver installed and configured in RoboDK.
+Important: The JAKA driver requires Visual C++ Redistributable Packages for Visual Studio 2013 installed on the computer. You can download and install it from Microsoft.
+
 
 ## Getting Started
 1. Clone or download this repository to your local machine.
