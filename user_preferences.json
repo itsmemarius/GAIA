@@ -1,0 +1,7 @@
+{
+  "meal_choice": "salad",
+  "portion_size": "medium",
+  "dietary_restrictions": ["nuts", "gluten"],
+  "ingredients": ["lettuce", "tomato", "cucumber", "olives"],
+  "additional_notes": "No dressing"
+}
