@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Healthy Eating Automated</title>
+</head>
+<body>
+  <h1 class="ws-heading">Healthy eating automated</h1>
+  <div class="container">
+    <div class="card box1">
+      <h2 class="under-heading">Explore our healthy meal creation options. You can create your own meal based on your needs</h2>
+      <div class="profile-container">
+        <form class="basic-profile-form">
+          <div class="input-group">
+            <label for="gender">Gender:</label>
+            <div class="gender-buttons">
+              <input type="button" class="gender-button" id="male" name="gender" value="Male">
+              <input type="button" class="gender-button" id="female" name="gender" value="Female">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+          </div>
+          <div class="input-group">
+            <label for="height">Height:</label>
+            <div class="height-input">
+              <input type="text" id="height" name="height">
+              <select name="height_unit">
+                <option value="cm">cm</option>
+                <option value="ft-in">ft + in</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="weight">Weight:</label>
+            <div class="weight-input">
+              <input type="text" id="weight" name="weight">
+              <select name="weight_unit">
+                <option value="kg">kg</option>
+                <option value="lb">lb</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="activity">Activity Level:</label>
+            <select id="activity" name="activity">
+              <option value="">Select</option>
+              <option value="sedentary">Sedentary</option>
+              <option value="lightly_active">Lightly Active</option>
+              <option value="moderately_active">Moderately Active</option>
+              <option value="very_active">Very Active</option>
+              <option value="extra_active">Extra Active</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card box2">
+      <img src="images/Pie-Chart.png" alt="">
+      <button class="accept-button">Accept</button>
+      <div class="extra-diet-info">
+        <h3 class="extra-diet-heading">Calories: 783 cal</h3>
+        <h3 class="extra-diet-heading">Vitamins: B1, B2, B3</h3>
+        <h3 class="extra-diet-heading">Other Dietary Components: High Fiber</h3>
+        <h3 class="extra-diet-heading">Glycemic Index: 10</h3>
+      </div>
+    </div>
+  </div>
+  <div class="extra-widgets">
+    <div class="widget-macros-calculator">
+      <div class="macros-calculator-row">
+        <h2>Protein</h2>
+        <div class="bar" id="protein-bar"></div>
+        <button oncli>-</button>
+        <p>80g</p>
+        <button>+</button>      
+      </div>
+      <div class="macros-calculator-row">
+        <h2>Fat</h2>
+        <div class="bar" id="fat-bar"></div>
+        <button>-</button>
+        <p>80g</p>
+        <button>+</button>      
+      </div>
+      <div class="macros-calculator-row">
+        <h2>Carbs</h2>
+        <div class="bar" id="carbs-bar"></div>
+        <button>-</button>
+        <p>80g</p>
+        <button>+</button>
+      </div>
+    </div>
+    <div class="widget-news">
+    </div>
+  </div>
+</body>
+</html>

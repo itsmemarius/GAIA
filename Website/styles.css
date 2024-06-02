@@ -1,0 +1,179 @@
+:root {
+    --background-color: #FCFBF4;
+    --input-background: #ECECEC;
+    --primary-text-color: #2E2E2E;
+    --success-green: #AED768;
+    --simple-text-color: #545454;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--simple-text-color);
+    font-family: "League Spartan", sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem; /* Add some padding for mobile */
+  }
+  
+  /* Form Elements */
+  label {
+    color: var(--simple-text-color);
+    display: flex;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  input,
+  select {
+    background-color: var(--input-background);
+    color: var(--simple-text-color);
+    width: 100%;            /* Inputs take full width on mobile */
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 2rem;  /* Slightly smaller border radius */
+    padding: 1rem 1rem;
+    font-size: 1.5rem;      /* Slightly smaller font size */
+    font-weight: 700;
+  }
+  
+  .gender-buttons,
+  .height-input,
+  .weight-input {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Allow items to wrap to the next line if they don't fit */
+    justify-content: space-between; /* Distribute space between items */
+  }
+  
+  .gender-buttons {
+    margin-bottom: 1.5rem; /* Add margin for better spacing */
+  }
+  
+  .gender-button {
+    width: 48%;              /* Make each button almost half the width */
+  }
+  
+  select[name="height_unit"],
+  select[name="weight_unit"] {
+    width: 20%;              
+  }
+  
+  form > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .extra-widgets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .macros-calculator-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  
+  .widget-macros-calculator{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    padding: 1rem;
+    background-color:bisque;
+    border-radius: 2rem;
+    border: 0;
+  }
+  
+  .widget-news{
+    height: 3rem;
+    width: 50%;
+    background-color: grey;
+    border: 0;
+    border-radius: 2rem;
+  }
+
+  .bar{
+    height: 1rem;
+    width: 100%;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+  }
+  
+  /* Containers */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile by default */
+    align-items:flex-end;
+  }
+  
+  .card {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+  }
+  
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--input-background);
+  }
+  
+  .box2 img {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+  }
+  
+  /* Headings */
+  .ws-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Chewy", sans-serif;
+    color: var(--primary-text-color);
+  }
+  
+  /* Accept Button */
+  .accept-button {
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--success-green);
+    border-radius: 2rem; 
+    border: 4px solid black;
+    text-align: center;
+    font-size: 3rem;   
+    color: white;
+    padding: 0.5rem 1rem; 
+    width:60%;           
+    margin: 0 auto;    /* Center horizontally with auto margins */
+  }
+
+  .extra-diet-info {
+    margin: 2rem;
+  }
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;      
+      justify-content: space-around;
+    }
+  
+    .card {
+      margin: 1rem;  
+    }
+  
+    .ws-heading {
+      text-align: left;
+      font-size: 8rem;
+    }
+  }
+
+  

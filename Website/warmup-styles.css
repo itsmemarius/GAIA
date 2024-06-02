@@ -1,0 +1,32 @@
+.extra-widgets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.widget-macros-calculator{
+  height: 3rem;
+  width: 3rem;
+  background-color:bisque;
+  border-radius: 2rem;
+  border: 0;
+}
+
+.widget-news{
+  height: 3rem;
+  width: 3rem;
+  background-color: grey;
+  border: 0;
+  border-radius: 2rem;
+}
+
+.macro-bar{
+  height: 1rem;
+}
+
+.fill{
+  width: 100%;
+  background: radial-gradient(#fc92c3, #fc5696);
+  border-radius: 1rem;
+}
